@@ -1,0 +1,140 @@
+body {
+    font-size: 1.1111111111111112vw;
+    font-family: sans-serif;
+}
+.navbar {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    display: flex;
+    justify-content: center;
+}
+.nav-container {
+    max-width: 73.18em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo {
+    height: 5.31em;
+}
+.spacer {
+    width: 20.37em;
+}
+.nav-link {
+    text-decoration: none;
+    color: rgba(160, 160, 160, 1);
+    padding-left: 2.81em;
+    font-size: 1em;
+}
+.navi-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.all-sec{
+    padding-top: 6em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.prod-img {
+    height: 17.5em;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.68em;
+    align-items: center;
+}
+.first-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prod-txt{
+    font-size: 0.75em;
+}
+.all-sec {
+    display: flex;
+    justify-content: center;
+}
+.product-row {
+    display: flex;
+}
+.product-row-2 {
+    display: flex;
+    margin-top: 5.93em;
+    margin-bottom: 5.93em;
+}
+.first-img{
+    margin-left: 0;
+}
+.descript-img{
+    height: 44.62em;
+}
+.descript-text{
+    width: 36.43em;
+    font-size: 1.125em;
+}
+.descript-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 81.31em;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.descript-container-description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 81.31em;
+    justify-content: space-between;
+}
+.discript {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enquire-btn {
+    width: 16.87em;
+    height: 4.31em;
+    background-color: rgba(13, 141, 207, 1);
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5625em;
+    color: white;
+    font-size: 1em;
+}
+.textfield {
+    width: 38.37em;
+    height: 3.37em;
+    padding-left: 2.37em;
+    background: rgba(244, 244, 244, 1);
+    border: none;
+    border-radius: 0.9375em;
+    margin-top: 0.875em;
+    margin-bottom: 0.875em;
+    font-size: 0.85em;
+}
+.spacer_enquire {
+    width: 36em;
+}
+.enquire-btn-form{
+    width: 16.87em;
+    height: 4.31em;
+    background-color: rgba(13, 141, 207, 1);
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5625em;
+    color: white;
+    font-size: 1em;
+    margin-top: 5.375em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
