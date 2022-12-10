@@ -42,6 +42,7 @@ body {
 }
 .prod-img {
     height: 17.5em;
+    width: 12.375em;
 }
 .product{
     display: flex;
