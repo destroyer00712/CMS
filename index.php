@@ -24,7 +24,7 @@
         </div>
         <section class="all-sec">
         <div class="product-row">
-            <?php
+        <?php
             $servername = "localhost";
             $username = "root";
             $password = "root";
@@ -55,7 +55,7 @@
                     </a>
             ';
             }
-            ?>
+        ?>
             </div>
             <div class="product-row-2">
                 <a href="description.html" class="navi-link">
