@@ -32,7 +32,7 @@
                     <th>'. $row['description'] .'</th>
                     <th>'. $row['row'] .'</th>
                     <th><a href="update.php?title='. $row['title'] . '&img=' . $row['image'] . '&discription=' . $row['description'] . '&row=' . $row['row'] .'">Update</a></th>
-                    <th><a href="">Delete</a></th>
+                    <th><a href="delete.php?title=' . $row['title'] . '">Delete</a></th>
                 </tr>
             ';
             }
