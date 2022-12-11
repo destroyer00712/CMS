@@ -15,18 +15,7 @@
         <th><b>Delete</b></th>
     </tr>
     <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "root";
-            $dbname = "CMS";
-            
-            // Create connection
-            $connection = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-            if ($connection->connect_error) {
-              die("Connection failed: " . $connection->connect_error);
-            }
-
+            include("connection.php");
             //fetches the data
             $sql = "SELECT * FROM `product`";
             $result = $connection->query($sql);
@@ -42,7 +31,7 @@
                     <th>'. $row['image'] .'</th>
                     <th>'. $row['description'] .'</th>
                     <th>'. $row['row'] .'</th>
-                    <th><a href="">Update</a></th>
+                    <th><a href="update.php?title='. $row['title'] . '&img=' . $row['image'] . '&discription=' . $row['description'] . '&row=' . $row['row'] .'">Update</a></th>
                     <th><a href="">Delete</a></th>
                 </tr>
             ';
@@ -50,7 +39,7 @@
         ?>
         <tr>
             <th>
-                <a href="">New Product</a>
+                <a href="new.php">New Product</a>
             </th>
         </tr>
         <tr>

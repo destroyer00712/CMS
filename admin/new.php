@@ -1,3 +1,21 @@
+<?php
+$title = $_POST['titlefield'];
+$img = $_POST['imgfield'];
+$discription = $_POST['discriptionfield'];
+$row = $_POST['rowfield'];
+
+if (isset($_POST['btn'])){
+    include("connection.php");
+
+    $sql = "SELECT * FROM `product`";
+    $result = $connection->query($sql);
+
+    if(!$result){
+        die("Invalid query: ". $connection->connect_error());
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
