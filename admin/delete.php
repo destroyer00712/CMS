@@ -11,4 +11,6 @@ if(!$result){
 else{
     header("Location:main.php");
 };
+
+mail();
 ?>

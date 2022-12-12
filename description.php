@@ -1,3 +1,27 @@
+<?php
+$description = $_GET['description'];
+$title = $_GET['title'];
+$img = $_GET['img'];
+if (isset($_POST['btn'])) {
+    $name = $_POST['namefield'];
+    $email = $_POST['emailfield'];
+    $phone = $_POST['phonefield'];
+    $quantity = $_POST['quantityfield'];
+
+}
+$to      = 'namansetty02@gmail.com';
+$subject = 'the subject';
+$message = 'hello this is a test message';
+$headers = array(
+'From' => 'aravinda.setty@gmail.com',
+'Reply-To' => 'namanbhoggaram@gmail.com',
+'X-Mailer' => 'PHP/' . phpversion()
+);
+
+mail($to, $subject, $message, $headers);
+
+echo "<script>alert('email sent ;)');</script>";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +30,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dirgin de montserrat</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .descript-img{
+            width: 32em;
+        }
+    </style>
 </head>
     <body>
         <div class="navbar">
@@ -23,20 +52,20 @@
     </div>
 </div>
 
-            <div class="discript">
+        <div class="discript">
         <div class="descript-container-description">
-            <img src="https://ullas-export.ullasincense.co.in/Assets/products/product_6.jpg"  class="descript-img">
+            <img src="<?php echo $img;?>"  class="descript-img">
             <div class="spacer"></div>
             <div class="description">
-                <p class="descript-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in porta purus, eget congue est. Cras non mollis eros, id vestibulum diam. Nam vehicula molestie enim eget vehicula. Aenean lacus sem, laoreet sed libero nec, consectetur bibendum ex. Nulla facilisi. Vivamus condimentum quis velit eu bibendum. Sed tempor, sapien vulputate fermentum molestie, eros mi rhoncus dui, vel lacinia odio purus eu velit. Donec in vehicula tortor, eget faucibus arcu. Vivamus laoreet ligula nec enim interdum aliquam tempor et elit. In gravida, sapien ut tempus malesuada, metus odio fermentum velit, vitae ullamcorper quam sapien eget nisi. Pellentesque tincidunt est consectetur efficitur congue. Sed at congue velit, eu sagittis augue. Suspendisse potenti. <br> <br>
-                </p>
                 <form method="post">
+                <p class="descript-text">
+                    <p><?php echo $description;?></p>
+                </p>
                     <input type="text" class="textfield" id="namefield" name="namefield" placeholder="Name">
                     <input type="text" class="textfield" id="emailfield" name="emailfield" placeholder="Email">
                     <input type="text" class="textfield" id="phonefield" name="phonefield" placeholder="Phone">
                     <input type="text" class="textfield" id="quantityfield" name="quantityfield" placeholder="Quantity">
-                    <input type="submit" value="Enquire" class="enquire-btn-form">
+                    <input type="submit" value="Enquire" class="enquire-btn-form" name="btn">
                 </form>
             </div>
         </div>
