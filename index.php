@@ -25,18 +25,7 @@
         <section class="all-sec">
         <div class="product-row">
         <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "root";
-            $dbname = "CMS";
-            
-            // Create connection
-            $connection = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-            if ($connection->connect_error) {
-              die("Connection failed: " . $connection->connect_error);
-            }
-
+            include("connection.php")
             //fetches the data
             $sql = "SELECT * FROM `product` WHERE row=1;";
             $result = $connection->query($sql);
@@ -94,17 +83,7 @@
             
             <div class="product-row">
             <?php
-                $servername = "localhost";
-                $username = "root";
-                $password = "root";
-                $dbname = "CMS";
-                
-                // Create connection
-                $connection = new mysqli($servername, $username, $password, $dbname);
-                // Check connection
-                if ($connection->connect_error) {
-                die("Connection failed: " . $connection->connect_error);
-                }
+                include("connection.php");
 
                 //fetches the data
                 $sql = "SELECT * FROM `product` WHERE row=3;";
